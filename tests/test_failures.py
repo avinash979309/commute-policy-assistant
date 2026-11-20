@@ -126,5 +126,11 @@ def test_unknown_url_gets_plain_json(client):
     assert response.json()["status"] == "error"
 
 
+def test_home_page_opens_swagger(client):
+    response = client.get("/", follow_redirects=False)
+    assert response.status_code == 307
+    assert response.headers["location"] == "/docs"
+
+
 def test_health(client):
     assert client.get("/health").json() == {"status": "ok"}

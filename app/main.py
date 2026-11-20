@@ -13,7 +13,7 @@ from typing import Annotated
 
 from fastapi import Depends, FastAPI, HTTPException, Request
 from fastapi.exceptions import RequestValidationError
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, RedirectResponse
 from pydantic import BaseModel, StringConstraints
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
@@ -50,6 +50,12 @@ class AskRequest(BaseModel):
 
 
 # ---------------------------------------------------------------- routes
+
+@app.get("/", include_in_schema=False)
+def home():
+    # Opening http://localhost:8000 in a browser lands on the Swagger UI.
+    return RedirectResponse("/docs")
+
 
 @app.get("/health")
 def health():
