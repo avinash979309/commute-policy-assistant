@@ -1,6 +1,6 @@
 # Commute Policy Assistant (Case Study B)
 
-**Demo video (2 min):** https://youtu.be/Gnwsm5q0GTU
+**Demo video :** https://youtu.be/Gnwsm5q0GTU?si=X6XCIW1XL0F7HGtD
 
 An assistant that answers an employee's transport questions **only from their
 own company's current policy**, cites the document and section, says plainly
