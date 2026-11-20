@@ -1,5 +1,7 @@
 # Commute Policy Assistant (Case Study B)
 
+**Demo video (2 min):** https://youtu.be/Gnwsm5q0GTU
+
 An assistant that answers an employee's transport questions **only from their
 own company's current policy**, cites the document and section, says plainly
 when the policy is silent, and never answers from another company's document.
@@ -13,10 +15,12 @@ Stack (as required): **Python, FastAPI, Chroma, a local embedding model
 ## 1. Run it (one command)
 
 ```bash
-docker compose up
+docker compose up --build
 ```
 
-Then open **http://localhost:8000/docs** (Swagger UI).
+Then open **http://localhost:8000** (it redirects to the Swagger UI at `/docs`).
+`--build` makes sure the image matches the code you have; on a fresh clone a
+plain `docker compose up` does the same.
 
 * The three sample policies load automatically on first start.
 * **No API keys are committed** (the brief's rule). The real-LLM results are
