@@ -1,0 +1,20 @@
+[
+  {
+    "id": "nimbus",
+    "name": "Nimbus Labs",
+    "names_in_text": ["nimbus"],
+    "transport_desk": "the Nimbus Labs transport desk (ext. 4100, transport@nimbuslabs.example)"
+  },
+  {
+    "id": "orbit",
+    "name": "Orbit Systems",
+    "names_in_text": ["orbit"],
+    "transport_desk": "the Orbit Systems transport desk (ext. 2200, commute@orbitsystems.example)"
+  },
+  {
+    "id": "vertex",
+    "name": "Vertex Finance",
+    "names_in_text": ["vertex"],
+    "transport_desk": "the Vertex Finance transport desk (ext. 7300, transport@vertexfinance.example)"
+  }
+]

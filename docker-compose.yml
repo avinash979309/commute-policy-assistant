@@ -1,0 +1,17 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    # LLM keys are optional. Compose reads them from a .env file next to this
+    # file if there is one; without it they are empty and the app runs offline.
+    environment:
+      GROQ_API_KEYS: ${GROQ_API_KEYS:-}
+      GEMINI_API_KEYS: ${GEMINI_API_KEYS:-}
+      STORAGE_DIR: /data
+    volumes:
+      - policy_data:/data   # Chroma + SQLite survive restarts
+      - ./eval:/app/eval    # eval results land in your eval/ folder
+
+volumes:
+  policy_data:

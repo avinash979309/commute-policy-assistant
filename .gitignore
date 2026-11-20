@@ -1,0 +1,12 @@
+# secrets - never commit
+.env
+
+# runtime data (Chroma + SQLite), recreated at startup
+storage/
+
+# local stuff
+.venv/
+.scratch/
+__pycache__/
+.pytest_cache/
+*.pyc

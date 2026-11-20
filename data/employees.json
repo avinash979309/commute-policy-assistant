@@ -1,0 +1,8 @@
+[
+  {"employee_id": "NIM-1001", "name": "Asha Rao",      "company": "nimbus", "role": "employee"},
+  {"employee_id": "NIM-9001", "name": "Nimbus Admin",  "company": "nimbus", "role": "admin"},
+  {"employee_id": "ORB-1001", "name": "Ravi Kumar",    "company": "orbit",  "role": "employee"},
+  {"employee_id": "ORB-9001", "name": "Orbit Admin",   "company": "orbit",  "role": "admin"},
+  {"employee_id": "VTX-1001", "name": "Meera Iyer",    "company": "vertex", "role": "employee"},
+  {"employee_id": "VTX-9001", "name": "Vertex Admin",  "company": "vertex", "role": "admin"}
+]

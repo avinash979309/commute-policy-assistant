@@ -1,0 +1,29 @@
+{
+  "llm": "real LLM (groq then gemini)",
+  "results": [
+    {
+      "mode": "vector",
+      "cases": 38,
+      "passed": 36,
+      "pass_rate": 0.947,
+      "retrieval_hit_at_1": 0.871,
+      "retrieval_hit_at_3": 0.968,
+      "latency_p50_ms": 894,
+      "latency_p95_ms": 1888,
+      "llm_calls_max": 2,
+      "llm_calls_mean": 0.87
+    },
+    {
+      "mode": "hybrid",
+      "cases": 38,
+      "passed": 37,
+      "pass_rate": 0.974,
+      "retrieval_hit_at_1": 0.839,
+      "retrieval_hit_at_3": 1.0,
+      "latency_p50_ms": 823,
+      "latency_p95_ms": 1315,
+      "llm_calls_max": 2,
+      "llm_calls_mean": 0.87
+    }
+  ]
+}
